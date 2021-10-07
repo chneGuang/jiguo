@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>报告</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.min.css">
+    <link rel="stylesheet" href="../css/report.css">
+</head>
+<body>
+        <!-- 头部导航栏 -->
+        <header>
+            <div class="header">
+                <a href="./index.html"><img src="../img/logonew.png" alt="" class="logo"></a>
+                <ul class="nav">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="#">酷玩</a></li>
+                    <li><a href="#">导购</a></li>
+                    <li><a href="../user/user.html">试用</a></li>
+                    <li><a href="../report/report.html" class="select">报告</a></li>
+                </ul>
+                <div class="left">
+                    <img src="../image/素材/图片/css/img/search.png" alt="" class="search">
+                    <a href="#" class="regist">注册</a>
+                    <a href="#" class="login">登录</a>
+                </div>
+            </div>
+        </header>
+        <!-- 导航 -->
+        <nav class="title">
+            <h1>体检报告</h1>
+            <ul class="title-one">
+                <li class="select">最新</li>
+                <li>最热</li>
+            </ul>
+        </nav>
+        <!-- 内容 -->
+        <section>
+            <div class="section">
+                <div class="left">
+                    <ul class="section-one">
+                        <!-- <li>
+                            <img src="../img/bg1.jpg" alt="">
+                            <div class="bottom">
+                                <p class="one">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                                <div class="two">
+                                    <span class="tx"><img src="./../image/素材/图片/css/img/tx.jpg" alt=""> 苏苏</span>
+                                    <span class="time">2016-01-05</span>
+                                    <p class="right">
+                                        <span class="zan">3</span>
+                                        <span class="reply">3</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>关于格林威特空气净化器还有4篇报告，点击查看</li> -->
+                    </ul>
+                </div>
+                <div class="right">
+                    <h2>极果体验师</h2>
+                    <img src="./../img/tiyanImg.jpg" alt="">
+                    <div class="one">
+                        <h3>福利</h3>
+                        <p>
+                            第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软！
+                        </p>
+                        <h3>要求</h3>
+                        <p>
+                            是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。
+                        </p>
+                        <h3>申请</h3>
+                        <p>
+                            1. 关注极果公众号：jguojguo <br>
+                            （或扫描下方二维码）<br>
+                            2. 在公众号内回复：体验师
+                        </p>
+                    </div>
+                    <h2>关注我们</h2>
+                    <img src="./../img/myCode.jpg" alt="">
+                </div>
+            </div>
+            <div class="one-bottom"><p><img src="../image/素材/图片/css/img/more.png" alt="">点击加载更多</p></div>
+        </section>
+</body>
+<script src="./../js/jquery-3.5.1.min.js"></script>
+<script src="./../js/template-web.js"></script>
+<script>
+    $('.title-one>li').on('click',function(){
+        $(this).siblings().removeClass('select');
+        $(this).addClass('select');
+    })
+</script>
+<script id="moban" type="text/html">
+    {{each value}}
+    <li>
+        <img src="{{$value.img}}" alt="">
+        <div class="bottom">
+            <p class="one">{{$value.text}}</p>
+            <div class="two">
+                <span class="tx"><img src="../image/素材/图片/css/img/tx.jpg">{{$value.uName}}</span>
+                <span class="time">{{$value.endTime}}</span>
+                <p class="right">
+                    <span class="zan">3</span>
+                    <span class="reply">3</span>
+                </p>
+            </div>
+        </div>
+    </li>
+    <li class="li2">关于{{$value.text}}还有4篇报告，点击查看</li>
+    {{/each}}
+</script>
+<script id="moban1" type="text/html">
+    {{each value}}
+    <li>
+        <img src="{{$value.img}}" alt="">
+        <div class="bottom">
+            <p class="one">{{$value.text}}</p>
+            <div class="two">
+                <span class="tx"><img src="../image/素材/图片/css/img/tx.jpg">{{$value.uName}}</span>
+                <span class="time">{{$value.endTime}}</span>
+                <p class="right">
+                    <span class="zan">3</span>
+                    <span class="reply">3</span>
+                </p>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+<script src="./../js/report.js"></script>
+</html>

@@ -1,0 +1,342 @@
+@charset "UTF-8";
+.part-one {
+  width: 100%;
+  position: relative;
+}
+
+.part-one .del-out {
+  width: 1000px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.part-one .del-out .del {
+  float: right;
+  transform: translate(0px, 0px);
+  text-align: right;
+  margin-top: 45px;
+  color: #fffdf8;
+  overflow: hidden;
+  animation: move 500ms linear both;
+}
+
+.part-one .del-out .del h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.part-one .del-out .del .one {
+  font-size: 12px;
+  height: 35px;
+  margin: 0px 0px 25px 66px;
+  overflow: hidden;
+}
+
+.part-one .del-out .del .one span {
+  float: left;
+  margin-right: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.part-one .del-out .del .time {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.part-one .del-out .del .apply {
+  width: 242px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  border: none;
+  border-radius: 8px;
+  color: #fffdf8;
+  background-color: #fe5341;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.part-two {
+  width: 1200px;
+  margin: 20px auto 0px;
+}
+
+.part-two h1 {
+  margin-left: 100px;
+}
+
+.part-two .swiper-container {
+  margin-top: 20px;
+}
+
+.part-two .swiper-container .swiper-wrapper {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide {
+  width: 1000px;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li {
+  width: 220px;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  float: left;
+  margin-right: 37px;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li .top {
+  position: relative;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li .top img {
+  width: 220px;
+  height: 130px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li .top p {
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  padding: 0px 8px;
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 0px 5px 0px 5px;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li .top .one {
+  background-color: #ed5842;
+  color: white;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li .top .two {
+  background-color: #fcf5c7;
+  color: #b3ac7e;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li .bottom {
+  padding: 5px;
+  color: #f95e40;
+  text-align: center;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li .bottom .name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li .bottom .num span {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  border: 1px solid #f95e40;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li .bottom .people {
+  margin: 10px 0px;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li .bottom .people span {
+  color: #000;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li .bottom2 .num span {
+  color: #79cb67;
+  border-color: #79cb67;
+}
+
+.part-two .swiper-container .swiper-wrapper .swiper-slide li .bottom2 .time {
+  color: #79cb67;
+}
+
+.part-two .swiper-container .swiper-button-prev:after, .part-two .swiper-container .swiper-button-next:after {
+  width: 37px;
+  height: 38px;
+  color: #c0baba;
+}
+
+.part-three, .part-four, .part-five {
+  background-color: #f7f7f7;
+  margin-top: 28px;
+  padding-bottom: 30px;
+}
+
+.part-three .back, .part-four .back, .part-five .back {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.part-three .back .title, .part-four .back .title, .part-five .back .title {
+  height: 23px;
+  padding-top: 23px;
+  font-size: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  line-height: 23px;
+}
+
+.part-three .back .title span, .part-four .back .title span, .part-five .back .title span {
+  float: right;
+  width: 77px;
+  font-size: 12px;
+  color: #f95e40;
+  background: url("./../image/素材/图片/css/img/readMore.png") no-repeat 63px 6px;
+  cursor: pointer;
+}
+
+.part-three .back ul, .part-four .back ul, .part-five .back ul {
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.part-three .back ul li, .part-four .back ul li, .part-five .back ul li {
+  margin: 20px 37px 0px 0px;
+  float: left;
+  width: 220px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.part-three .back ul li .top img, .part-four .back ul li .top img, .part-five .back ul li .top img {
+  width: 220px;
+  height: 130px;
+}
+
+.part-three .back ul li .top img:hover, .part-four .back ul li .top img:hover, .part-five .back ul li .top img:hover {
+  animation: rink 1000ms infinite linear both;
+}
+
+.part-three .back ul li .bottom, .part-four .back ul li .bottom, .part-five .back ul li .bottom {
+  font-size: 14px;
+  padding: 12px 8px 15px;
+}
+
+.part-three .back ul li .bottom .name, .part-four .back ul li .bottom .name, .part-five .back ul li .bottom .name {
+  color: #3a3e3f;
+}
+
+.part-three .back ul li .bottom .name span, .part-four .back ul li .bottom .name span, .part-five .back ul li .bottom .name span {
+  display: block;
+}
+
+.part-three .back ul li .bottom .name .one, .part-four .back ul li .bottom .name .one, .part-five .back ul li .bottom .name .one {
+  color: #34383b;
+}
+
+.part-three .back ul li .bottom .name .two, .part-four .back ul li .bottom .name .two, .part-five .back ul li .bottom .name .two {
+  color: #a3a3a3;
+  margin-top: 10px;
+}
+
+.part-three .back ul li .bottom .del, .part-four .back ul li .bottom .del, .part-five .back ul li .bottom .del {
+  margin-top: 20px;
+  color: #9d9d9d;
+  overflow: hidden;
+}
+
+.part-three .back ul li .bottom .del .left, .part-four .back ul li .bottom .del .left, .part-five .back ul li .bottom .del .left {
+  float: left;
+}
+
+.part-three .back ul li .bottom .del .price, .part-four .back ul li .bottom .del .price, .part-five .back ul li .bottom .del .price {
+  float: left;
+  color: #ff4b77;
+}
+
+.part-three .back ul li .bottom .del .right, .part-four .back ul li .bottom .del .right, .part-five .back ul li .bottom .del .right {
+  float: right;
+  overflow: hidden;
+}
+
+.part-three .back ul li .bottom .del .right span, .part-four .back ul li .bottom .del .right span, .part-five .back ul li .bottom .del .right span {
+  float: left;
+  color: #9d9d9d;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.part-three .back ul li .bottom .del .right .zan, .part-four .back ul li .bottom .del .right .zan, .part-five .back ul li .bottom .del .right .zan {
+  margin-right: 5px;
+  background: url("./../image/素材/图片/css/img/zan.png") no-repeat 0px 1px;
+}
+
+.part-three .back ul li .bottom .del .right .reply, .part-four .back ul li .bottom .del .right .reply, .part-five .back ul li .bottom .del .right .reply {
+  background: url("./../image/素材/图片/css/img/reply.png") no-repeat 0px 1px;
+}
+
+.part-three .back ul li .bottom .del .right .xin, .part-four .back ul li .bottom .del .right .xin, .part-five .back ul li .bottom .del .right .xin {
+  margin-right: 5px;
+  background: url("./../image/素材/图片/css/img/xin.png") no-repeat 0px 1px;
+}
+
+.part-three .back ul li:nth-child(4n), .part-four .back ul li:nth-child(4n), .part-five .back ul li:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.part-three .back .four-bottom, .part-four .back .four-bottom, .part-five .back .four-bottom {
+  margin-top: 20px;
+  text-align: center;
+  color: #f95e40;
+  cursor: pointer;
+}
+
+.part-three .back .four-bottom p, .part-four .back .four-bottom p, .part-five .back .four-bottom p {
+  height: 20px;
+  line-height: 20px;
+}
+
+.part-three .back .four-bottom p img, .part-four .back .four-bottom p img, .part-five .back .four-bottom p img {
+  margin-right: 10px;
+}
+
+.part-four {
+  background-color: white;
+}
+
+.part-four li {
+  position: relative;
+}
+
+.part-four li .list {
+  position: absolute;
+  bottom: -11px;
+  left: 0px;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(200px, -200px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes rink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,185 @@
+@charset "UTF-8";
+.title {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 38px;
+  margin-bottom: 45px;
+}
+
+.title ul li {
+  width: 165px;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 0px;
+  box-sizing: border-box;
+  color: #9c988f;
+  cursor: pointer;
+}
+
+.title ul .select {
+  color: #fe5339;
+  border-bottom: 3px solid #fe5339;
+}
+
+.title .title-one {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+section {
+  background-color: #f7f7f7;
+  padding-top: 20px;
+}
+
+section .section {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+section .section .left {
+  float: left;
+}
+
+section .section .left li {
+  width: 700px;
+  height: 415px;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+section .section .left li img {
+  width: 700px;
+  height: 415px;
+}
+
+section .section .left li .bottom {
+  width: 700px;
+  height: 120px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding: 25px 20px 0px;
+  background-color: #fff;
+  opacity: 0.8;
+  box-sizing: border-box;
+}
+
+section .section .left li .bottom .one {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+section .section .left li .bottom .two {
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+}
+
+section .section .left li .bottom .two span {
+  float: left;
+  color: #9d9d9d;
+  padding-left: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+section .section .left li .bottom .two span img {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+section .section .left li .bottom .two .tx {
+  padding: 0px;
+}
+
+section .section .left li .bottom .two .right {
+  width: 60px;
+  float: right;
+  overflow: hidden;
+}
+
+section .section .left li .bottom .two .right .zan {
+  margin-right: 5px;
+  background: url("./../image/素材/图片/css/img/zan.png") no-repeat 0px 4px;
+}
+
+section .section .left li .bottom .two .right .reply {
+  background: url("./../image/素材/图片/css/img/reply.png") no-repeat 0px 4px;
+}
+
+section .section .left li .bottom .two .right .xin {
+  margin-right: 5px;
+  background: url("./../image/素材/图片/css/img/xin.png") no-repeat 0px 4px;
+}
+
+section .section .left .li2 {
+  width: 700px;
+  height: 50px;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 12px;
+  color: #a8a9a4;
+  margin-bottom: 10px;
+}
+
+section .section .right {
+  float: right;
+  width: 270px;
+}
+
+section .section .right h2 {
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px;
+  color: #5a5162;
+  padding-left: 30px;
+  border-left: 3px solid #f95e40;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+section .section .right .one {
+  margin: 16px 0px 66px;
+}
+
+section .section .right .one h3 {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+section .section .right .one p {
+  font-size: 12px;
+  color: #959595;
+  margin-bottom: 14px;
+}
+
+section .one-bottom {
+  text-align: center;
+  color: #f95e40;
+  cursor: pointer;
+}
+
+section .one-bottom p {
+  height: 20px;
+  line-height: 20px;
+}
+
+section .one-bottom p img {
+  margin-right: 10px;
+}
+
+section .one-bottom .nomore {
+  color: #9c988f;
+}

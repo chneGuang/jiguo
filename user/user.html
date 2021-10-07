@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免费试用</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.min.css">
+    <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+      <!-- 头部导航栏 -->
+    <header>
+        <div class="header">
+            <a href="./index.html"><img src="../img/logonew.png" alt="" class="logo"></a>
+            <ul class="nav">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="#">酷玩</a></li>
+                <li><a href="#">导购</a></li>
+                <li><a href="./user.html" class="select">试用</a></li>
+                <li><a href="#">报告</a></li>
+            </ul>
+            <div class="left">
+                <img src="../image/素材/图片/css/img/search.png" alt="" class="search">
+                <a href="#" class="regist">注册</a>
+                <a href="#" class="login">登录</a>
+            </div>
+        </div>
+    </header>
+    <!-- 导航栏 -->
+    <nav class="title">
+        <h1>免费试用</h1>
+        <ul class="title-one">
+            <li class="select">大众试用</li>
+            <li>体验师专享</li>
+        </ul>
+        <ul class="title-two">
+            <li class="select1">全部</li>
+            <li>申请中</li>
+            <li>试用中</li>
+            <li>已结束</li>
+        </ul>
+    </nav>
+    <!-- 内容 -->
+    <section>
+        <ul class="section-one">
+        </ul>
+        <div class="one-bottom"><p><img src="../image/素材/图片/css/img/more.png" alt="">点击加载更多</p></div>
+    </section>
+</body>
+<script src="./../js/jquery-3.5.1.min.js"></script>
+<script src="./../js/template-web.js"></script>
+<script id="moban" type="text/html">
+    {{each value}}
+    {{if $value.info_ty=='首发'}}
+    <li>
+        <div class="top">
+            <img src="{{$value.img}}" alt="">
+            <p class="one">{{$value.info_ty}}</p>
+        </div>
+        <div class="bottom">
+            <p class="name">{{$value.text}}</p>
+            <p class="num">
+                <span>{{$value.totalnum}}</span>
+                <span>{{$value.num}}台</span>
+            </p>
+            <p class="people">{{$value.apply}}<span>申请</span></p>
+            <p class="time">剩余时间2天</p>
+        </div>
+    </li>
+    {{else}}
+    <li>
+        <div class="top">
+            <img src="{{$value.img}}" alt="">
+            <p class="two">{{$value.info_ty}}</p>
+        </div>
+        <div class="bottom bottom2">
+            <p class="name">{{$value.text}}</p>
+            <p class="num">
+                <span>{{$value.totalnum}}</span>
+                <span>{{$value.num}}台</span>
+            </p>
+            <p class="people">{{$value.apply}}<span>申请</span></p>
+            <p class="time">剩余时间2天</p>
+        </div>
+    </li>
+    {{/if}}
+    {{/each}}
+</script>
+<script src="./../js/user.js"></script>
+</html>
